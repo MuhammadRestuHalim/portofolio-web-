@@ -1,0 +1,101 @@
+body {
+background: linear-gradient(#ffffff 0%, #be0000 40%, #262323 100%);
+}
+
+.profile {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 20px;
+padding-top: 55px;
+}
+
+.profileImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    color:white;
+    text-align: center;
+}
+
+.profile h4 {
+    color:white;
+    transform: translateY(10px);
+    text-align: center;
+}
+
+.biodata {
+    background: linear-gradient(#ffffff 0%, #ffffffef 60%, #be0000 100%);
+    padding-bottom: 200px;
+}
+
+.row {
+    padding: 0px 10px;
+}
+
+.sekolah-dasar {
+    transform: translateY(15px);
+}
+
+.footer {
+    background-color: white;
+    padding-bottom: 20px;
+    
+}
+
+
+.watermark {
+    padding-top: 20px;
+}
+
+.biodata {
+    padding-top: 55px;
+}
+
+.profileImage {
+    opacity: 0; /* Atur opasitas gambar menjadi 0 agar tidak terlihat */
+    transition: opacity 1s ease-in-out; /* Tambahkan efek transisi */
+  }
+  
+  .profileImage.loaded {
+    opacity: 1; /* Atur opasitas menjadi 1 untuk membuat gambar muncul */
+  }
+  
+/* Animasi mengetik */
+@keyframes typing {
+    from {
+      width: 0; /* Memulai dengan lebar nol */
+    }
+    to {
+      width: 100%; /* Mengakhiri dengan lebar penuh */
+    }
+  }
+  
+  .typing-effect {
+    overflow: hidden; /* Menghindari teks yang melebihi ukuran yang ditentukan */
+    white-space: nowrap; /* Mencegah teks untuk pindah ke baris berikutnya */
+    margin: 0; /* Menghapus margin default */
+    animation: typing 3s steps(40, end) forwards; /* Animasi mengetik */
+  }
+  
+section .animate {
+    transition: 1s;
+    filter: blur(2px);
+}
+
+section.show-animate .animate {
+    filter: blur(0);
+}
+
+.sec-1 .animate {
+    transform: translateY(100%);
+}
+
+.sec-1.show-animate .animate {
+    transform: translateY(0);
+}
+  
